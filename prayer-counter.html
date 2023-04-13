@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prayer Counter</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.counter {
+			font-size: 5rem;
+			margin-bottom: 2rem;
+		}
+		.button {
+			padding: 1rem;
+			font-size: 2rem;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Prayer Counter</h1>
+		<div class="counter">0</div>
+		<button class="button" onclick="increment()">+1</button>
+	</div>
+	<script>
+		let count = 0;
+		function increment() {
+			count++;
+			document.querySelector('.counter').innerHTML = count;
+		}
+	</script>
+</body>
+</html>
